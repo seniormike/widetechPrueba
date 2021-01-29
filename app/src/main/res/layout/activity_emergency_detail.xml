@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:title="BEUAPP" />
+
+            <Space
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50" />
+
+            <ImageButton
+                android:id="@+id/logoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/quantum_ic_clear_grey600_24" />
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/callbackButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@android:color/holo_blue_dark"
+                android:text="PEDIR APOYO"
+                android:textSize="20dp">
+
+            </Button>
+
+            <TextView
+                android:id="@+id/emergencyDetailsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Detalle de emergencia"
+                android:textAlignment="center"
+                android:textSize="12pt"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/placeTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Lugar/Edificio"
+                        android:textAlignment="center"
+                        android:textSize="12pt"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/placeContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="No hay conexión"
+                        android:textAlignment="center"
+                        android:textSize="12pt"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/typeTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Tipo"
+                        android:textAlignment="center"
+                        android:textSize="12pt"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/typeContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="No hay conexión"
+                        android:textAlignment="center"
+                        android:textSize="12pt"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="4">
+
+                    <TextView
+                        android:id="@+id/detailsTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="Detalles"
+                        android:textAlignment="center"
+                        android:textSize="12pt"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/detailsContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:padding="8dp"
+                        android:text="No hay conexión"
+                        android:textAlignment="center"
+                        android:textSize="12pt"></TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/closeEmergency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@android:color/holo_red_dark"
+                android:text="Cerrar Emergencia"
+                android:textSize="20dp">
+
+            </Button>
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFEE00">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/torchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#FFEE00"
+                    android:padding="4dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/flashlight" />
+
+                <ImageButton
+                    android:id="@+id/homeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#FFEE00"
+                    android:padding="4dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/home" />
+
+                <ImageButton
+                    android:id="@+id/infoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="#FFEE00"
+                    android:padding="4dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/info_icon" />
+
+            </LinearLayout>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

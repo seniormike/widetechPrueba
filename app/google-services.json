@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "364998269535",
+    "firebase_url": "https://beu-uniandes.firebaseio.com",
+    "project_id": "beu-uniandes",
+    "storage_bucket": "beu-uniandes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364998269535:android:04835a6599d10001f899ea",
+        "android_client_info": {
+          "package_name": "ISIS3510_202020_Team2.beu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364998269535-ggoni56evh6igmrg10q2707r4u210d3g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA1l3euzNps6PpXdGJkZdCUtk15yYMkKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364998269535-ggoni56evh6igmrg10q2707r4u210d3g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364998269535:android:8e915895fbf3df57f899ea",
+        "android_client_info": {
+          "package_name": "com.uniandes.widetech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364998269535-ggoni56evh6igmrg10q2707r4u210d3g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA1l3euzNps6PpXdGJkZdCUtk15yYMkKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364998269535-ggoni56evh6igmrg10q2707r4u210d3g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364998269535:android:e68de095d34eeacbf899ea",
+        "android_client_info": {
+          "package_name": "isis3510.brigadapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364998269535-ggoni56evh6igmrg10q2707r4u210d3g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA1l3euzNps6PpXdGJkZdCUtk15yYMkKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364998269535-ggoni56evh6igmrg10q2707r4u210d3g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/perfilTitle"
+        android:textColor="@android:color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="3dp">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorGrayLight">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/roundedbutton">
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/profile"
+                android:scaleType="centerCrop"
+                android:padding="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+                <TextView
+                    android:id="@+id/itemTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="Miguel Angel Puentes Ramirez"/>
+                <TextView
+                    android:id="@+id/itemDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ma.puentes@uniandes.edu.co"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="left">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nivel 12"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:layout_margin="1dp">
+
+                    </TextView>
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/info_icon"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="1dp">
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:background="@color/colorGrayLight">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedbutton"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="5">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mis fotos"
+                        android:textSize="18sp"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:layout_weight="4">
+
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:padding="1dp">
+                        <Button
+                            android:id="@+id/addPhoto"
+                            android:text="+"
+                            android:textSize="25sp"
+                            android:background="@drawable/rounded_button_pink"
+                            android:layout_margin="6dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content">
+
+                        </Button>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundedbutton">
+                    >
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewProfilePictures"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/roundedbutton">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:layout_margin="5dp"
+                android:background="@drawable/roundedbutton"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="5">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mis firmas"
+                        android:textSize="18sp"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold"
+                        android:layout_weight="4">
+
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="right"
+                        android:padding="1dp"
+                        android:layout_weight="1">
+                        <Button
+                            android:id="@+id/addSignature"
+                            android:text="+"
+                            android:textSize="25sp"
+                            android:background="@drawable/rounded_button_pink"
+                            android:layout_margin="6dp"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content">
+
+                        </Button>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundedbutton">
+                    >
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewProfileSignature"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/roundedbutton">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/profile_icon">
+    </ImageView>
+
+</LinearLayout>
